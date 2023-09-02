@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', main)
 
-const referenceElement = document.getElementById('reference');
+
 const dataContainer = document.getElementById('data-container');
 const loader = document.querySelector('.loading-container');
-const btnData = document.getElementById('new-data');
-const referenceElementPositionData = referenceElement.getBoundingClientRect();
 let scrollStatus = true;
 
 
@@ -18,6 +16,8 @@ const options = {
 };
 
 function main() {
+    const referenceElement = document.getElementById('reference');
+    const referenceElementPositionData = referenceElement.getBoundingClientRect();
     newData()
 
     window.addEventListener('scroll', () => {
@@ -66,6 +66,8 @@ function showData(dataArray) {
 }
 
 function newData() {
+    const btnData = document.getElementById('new-data');
+
     btnData.addEventListener('click', () => {
         dataContainer.innerHTML = '';
         loader.style.display = "grid"
