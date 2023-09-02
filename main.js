@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', main)
 
 const dataContainer = document.getElementById('data-container');
+const loader = document.querySelector('.loading-container');
 
 const url = 'https://api.thecatapi.com/v1/images/search?limit=20';
 const options = {
@@ -47,6 +48,7 @@ function showData(dataArray) {
     }
 
     dataContainer.innerHTML = template;
+    loader.style.display = 'none';
 
 }
 
