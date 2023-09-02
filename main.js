@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', main)
 
 const dataContainer = document.getElementById('data-container');
 const loader = document.querySelector('.loading-container');
+const btnData = document.getElementById('new-data');
 
 const url = 'https://api.thecatapi.com/v1/images/search?limit=20';
 const options = {
@@ -13,6 +14,7 @@ const options = {
 
 function main() {
     getData()
+    newData()
 }
 
 async function getData() {
@@ -52,5 +54,10 @@ function showData(dataArray) {
 
 }
 
-
+function newData() {
+    btnData.addEventListener('click', () => {
+        window.location.reload();
+        window.location.href = 'index.html#cat-api';
+    })
+}
 
