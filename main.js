@@ -5,7 +5,7 @@ const dataContainer = document.getElementById('data-container');
 const loader = document.querySelector('.loading-container');
 const btnData = document.getElementById('new-data');
 const referenceElementPositionData = referenceElement.getBoundingClientRect();
-let scrollEnabled = true;
+let scrollStatus = true;
 
 
 
@@ -21,8 +21,8 @@ function main() {
     newData()
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= referenceElementPositionData.y && scrollEnabled) {
-            scrollEnabled = false;
+        if (window.scrollY >= referenceElementPositionData.y && scrollStatus) {
+            scrollStatus = false;
             return getData();
         }
     })
