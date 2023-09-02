@@ -56,8 +56,9 @@ function showData(dataArray) {
 
 function newData() {
     btnData.addEventListener('click', () => {
-        window.location.reload();
-        window.location.href = 'index.html#cat-api';
+        dataContainer.innerHTML = '';
+        loader.style.display = "grid"
+        getData()
     })
 }
 
