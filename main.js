@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', main)
 
+const referenceElement = document.getElementById('reference');
 const dataContainer = document.getElementById('data-container');
 const loader = document.querySelector('.loading-container');
 const btnData = document.getElementById('new-data');
+const referenceElementPositionData = referenceElement.getBoundingClientRect();
+let scrollEnabled = true;
+
+
 
 const url = 'https://api.thecatapi.com/v1/images/search?limit=20';
 const options = {
@@ -13,8 +18,14 @@ const options = {
 };
 
 function main() {
-    getData()
     newData()
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= referenceElementPositionData.y && scrollEnabled) {
+            scrollEnabled = false;
+            return getData();
+        }
+    })
 }
 
 async function getData() {
@@ -61,4 +72,6 @@ function newData() {
         getData()
     })
 }
+
+
 
