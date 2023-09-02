@@ -5,8 +5,8 @@
 :root {
     --header-height: 3rem;
     --nav-width: 75px;
-    --first-color: #232c4b;
-    --first-color-light: #a596df;
+    --first-color: #121522;
+    --first-color-light: #ab96ff;
     --white-color: #ffffff;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 0.87rem;
@@ -44,10 +44,11 @@ a {
     padding: 0 1rem;
     z-index: var(--z-fixed);
     transition: .5s;
+    color: white;
 }
 
 .header_toggle {
-    color: var(--first-color);
+    color: white;
     font-size: 1.5rem;
     cursor: pointer
 }
