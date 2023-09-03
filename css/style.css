@@ -466,7 +466,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 1.4s ease, transform 1.4s ease, visibility 0s 1.4s;
+    transition: opacity 1100ms ease, transform 1100ms ease, visibility 0s 1100ms;
 
 }
 
@@ -474,5 +474,5 @@ a {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    transition: opacity 1.4s ease, transform 1.4s ease, visibility 0s;
+    transition: opacity 1100ms ease, transform 1100ms ease, visibility 0s;
 }
