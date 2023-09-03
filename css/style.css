@@ -461,6 +461,51 @@ a {
     margin-bottom: 25%;
 }
 
+@media screen and (max-width: 575px) {
+    .separation {
+        margin-top: 60% !important;
+        margin-bottom: 60% !important;
+    }
+
+    body {
+        font-size: 0.67rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .separation {
+        margin-top: 60% !important;
+        margin-bottom: 60% !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .separation {
+        margin-top: 60% !important;
+        margin-bottom: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .separation {
+        margin-top: 20% !important;
+        margin-bottom: 50% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .separation {
+        margin-top: 30%;
+        margin-bottom: 25%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .separation {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+}
 
 .hiddenElem {
     opacity: 0;
