@@ -52,9 +52,9 @@ function showData(dataArray) {
     for (let cat of dataArray) {
 
         template += `
-        <div class="col-12 col-sm-6 col-md-4 col-xl-3 my-5">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 my-5" style="display:flex; justify-content: center; align-items:center;">
             <div class="">
-                <img class="img-fluid" src="${cat.url}" width='${cat.width}' height='${cat.height}' alt="Random cat image">
+                <img class="img-fluid" style="border-radius: 12px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" src="${cat.url}" width='${cat.width}' height='${cat.height}' alt="Random cat image">
             </div>
         </div>
                     `
