@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css');
 @import url('https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ropa+Sans&display=swap');
+
 
 :root {
     --header-height: 3rem;
@@ -8,7 +11,7 @@
     --first-color: #121522;
     --first-color-light: #ab96ff;
     --white-color: #ffffff;
-    --body-font: 'Nunito', sans-serif;
+    --body-font: 'Roboto', sans-serif;
     --normal-font-size: 0.87rem;
     --z-fixed: 100
 }
@@ -156,6 +159,8 @@ a {
 
 .titles {
     color: var(--first-color-light);
+    font-family: 'Ropa Sans', sans-serif;
+    ;
 }
 
 
@@ -461,15 +466,15 @@ a {
     margin-bottom: 25%;
 }
 
+
+
+
 @media screen and (max-width: 575px) {
     .separation {
         margin-top: 60% !important;
         margin-bottom: 60% !important;
     }
 
-    body {
-        font-size: 0.67rem;
-    }
 }
 
 @media screen and (min-width: 576px) {
@@ -502,10 +507,18 @@ a {
 
 @media screen and (min-width: 1400px) {
     .separation {
-        margin-top: 25%;
-        margin-bottom: 25%;
+        margin-top: 25% !important;
+        margin-bottom: 30% !important;
     }
+
 }
+
+
+
+
+
+
+
 
 .hiddenElem {
     opacity: 0;
