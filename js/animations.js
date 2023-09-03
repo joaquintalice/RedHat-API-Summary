@@ -12,7 +12,7 @@ const elementosP = document.querySelectorAll('p').forEach(elem => {
 });
 
 const header = document.getElementById('header').classList.remove('hiddenElem');
-const nav = document.getElementById('header').classList.remove('nav-bar');
+const nav = document.getElementById('nav-bar').classList.remove('hiddenElem');
 
 
 
